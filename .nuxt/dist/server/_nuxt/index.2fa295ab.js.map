@@ -1,0 +1,1 @@
+{"version":3,"file":"index.2fa295ab.js","sources":["../../../../pages/index.vue"],"sourcesContent":["<template>\n</template>\n\n<script setup>\n\nconst state = useStateStore();\nconst { getIsLoading } = storeToRefs(state);\n\n</script>\n\n<style scoped lang=\"scss\">\n\n</style>"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;AAKA,UAAA,QAAA,cAAA;AACA,gBAAA,KAAA;;;;;;;;;;;"}

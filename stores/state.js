@@ -18,7 +18,7 @@ export const useStateStore = defineStore('StateStore', {
     log: [],
     isLoading: true,
     baseUrl:
-      'https://raw.githubusercontent.com/0000rgb124/rgb124.github.io/main/public/',
+      'https://raw.githubusercontent.com/guillaume-leo/rgb124/main/assets/',
   }),
 
   getters: {
@@ -70,7 +70,7 @@ export const useStateStore = defineStore('StateStore', {
       for (let i = 0; i < 76; i++) {
         const emissiveTexUrl = `${
           this.baseUrl
-        }texture/emissive/Emission_v2_000${i.toString().padStart(2, '0')}.jpg`;
+        }textures/emissive/Emission_v2_000${i.toString().padStart(2, '0')}.jpg`;
 
         this.texEmissive[i] = assetsManager.addTextureTask(
           'Emission_v2_000' + i.toString().padStart(2, '0') + '.jpg',
@@ -88,7 +88,7 @@ export const useStateStore = defineStore('StateStore', {
        *    OBJECT 3D
        *------------------------**/
 
-      const obj3dUrl = this.baseUrl + 'modelinglogo2.obj';
+      const obj3dUrl = this.baseUrl + 'textures/modelinglogo2.obj';
 
       console.log(obj3dUrl);
 

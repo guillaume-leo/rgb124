@@ -6,10 +6,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d .output/public"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
     "nuxt": "3.0.0",
     "push-dir": "^0.4.1",
     "sass": "^1.56.2"

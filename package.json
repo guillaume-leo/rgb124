@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0",
+    "push-dir": "^0.4.1",
+    "sass": "^1.56.2"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^5.37.0",
+    "@babylonjs/loaders": "^5.37.0",
+    "@nuxt-modules/lazy-load": "^0.2.0",
+    "@pinia/nuxt": "^0.4.6",
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@splidejs/vue-splide": "^0.6.12",
+    "@vimeo/player": "^2.18.0",
+    "@vueuse/components": "^9.8.2",
+    "@vueuse/core": "^9.8.2",
+    "babylonjs": "^5.37.0",
+    "babylonjs-loaders": "^5.37.0",
+    "google-spreadsheet": "^3.3.0",
+    "gsap": "^3.11.5",
+    "nuxt-lazy-load": "^3.0.4",
+    "pinia": "^2.0.28",
+    "vue-collapsed": "^1.1.2",
+    "vue3-carousel": "^0.2.14"
+  }
+}

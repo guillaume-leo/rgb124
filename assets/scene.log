@@ -1,0 +1,90 @@
+Exporter version: 3.3.1, Blender version: 3.4.1
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  /Users/guillaumequet/code/perso/projects-2022/rgb124/assets/
+			processing texture hdriv1
+	Python World class constructor completed
+	WARNING: No active camera has been assigned, or is not in a currently enabled collection
+	processing begun of mesh:  LIGNE_TOP
+		animation processing begun
+			processing action LIGNE_TOP|CINEMA_4D_Main|Layer0.001:  in[1 - 301], out[0 - 301]
+		WARNING: No materials have been assigned: 
+		Custom split normals with tangents being used
+		num positions      :  264
+		num normals        :  264
+		num tangents       :  1056
+		num uvs            :  528
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  300
+	processing begun of mesh:  LIGNE_DOWN
+		animation processing begun
+			processing action LIGNE_DOWN|CINEMA_4D_Main|Layer0.001:  in[1 - 301], out[0 - 301]
+		WARNING: No materials have been assigned: 
+		Custom split normals with tangents being used
+		num positions      :  264
+		num normals        :  264
+		num tangents       :  1056
+		num uvs            :  528
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  300
+	processing begun of mesh:  fleche_up
+		animation processing begun
+			processing action fleche_up|CINEMA_4D_Main|Layer0.001:  in[1 - 301], out[0 - 301]
+		WARNING: No materials have been assigned: 
+		Custom split normals with tangents being used
+		num positions      :  454
+		num normals        :  454
+		num tangents       :  1816
+		num uvs            :  908
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  492
+	processing begun of mesh:  fleche_down
+		animation processing begun
+			processing action fleche_down|CINEMA_4D_Main|Layer0.001:  in[1 - 301], out[0 - 301]
+		WARNING: No materials have been assigned: 
+		Custom split normals with tangents being used
+		num positions      :  476
+		num normals        :  476
+		num tangents       :  1904
+		num uvs            :  952
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  492
+	processing begun of node:  Neutre
+		animation processing begun
+			processing action Neutre|CINEMA_4D_Main|Layer0.001:  in[1 - 301], out[0 - 301]
+	processing begun of mesh:  cube_center
+		animation processing begun
+			processing action cube_center|CINEMA_4D_Main|Layer0.001:  in[1 - 301], out[0 - 301]
+		WARNING: No materials have been assigned: 
+		Custom split normals with tangents being used
+		num positions      :  264
+		num normals        :  264
+		num tangents       :  1056
+		num uvs            :  528
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  300
+	processing begun of node:  model_split
+		animation processing begun
+			processing action model_split|CINEMA_4D_Main|Layer0.001:  in[1 - 301], out[0 - 301]
+========= Writing of JSON file started =========
+	writing mesh:  LIGNE_TOP
+	writing mesh:  LIGNE_DOWN
+	writing mesh:  fleche_up
+	writing mesh:  fleche_down
+	writing mesh:  cube_center
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 0.3748 secs

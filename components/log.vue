@@ -1,7 +1,9 @@
 <template>
   <ul class="logs">
     <img class="logs__logo" src="~/assets/rgb124-loading.gif" alt="website loading logo">
-    <li v-for="log in logs" :key="log" class="logs__log"> {{ log }} </li>
+    <li v-for="(log, i) in logs" :key="i" class="logs__log" :style="{ 'margin-left': `${Math.random() * 200}px` }"> {{ i
+    }} > {{ log }}
+    </li>
   </ul>
 </template>
 
@@ -10,6 +12,8 @@
 defineProps({
   logs: Array,
 })
+
+
 
 </script>
 
@@ -22,7 +26,7 @@ defineProps({
   right: 0;
   top: 0;
   bottom: 0;
-  max-width: 100%;
+  max-width: 50%;
   mix-blend-mode: multiply;
 }
 
@@ -48,5 +52,6 @@ defineProps({
   list-style: none;
   font-family: 'Courier New', Courier, monospace;
   color: black;
+  font-variant: small-caps;
 }
 </style>

@@ -7,20 +7,20 @@
     <NavPhone v-show="isNavOpen" />
   </Transition>
   <slot />
-
-  <canvas ref="canvas">
-  </canvas>
+  <Shape />
   <Transition>
-    <Log v-show="getIsLoading" :logs="log.slice().reverse()" />
+    <Log v-show="isLoading" :logs="logs.slice().reverse()" />
   </Transition>
   <Transition>
-    <Progress v-show="getIsLoading" :progress=getProgress />
+    <Progress v-show="isLoading" :progress=progress />
   </Transition>
 </template>
 
 <script setup>
 
-const canvas = ref(null);
+const babylonState = useBabylonStore();
+
+const { isLoading, progress, logs } = storeToRefs(babylonState);
 
 const isNavOpen = ref(false)
 
@@ -34,19 +34,6 @@ const handleNavVisibility = () => {
 watch(route, (r) => {
   isNavOpen.value = false;
   currentPage.value = r.path;
-})
-
-const state = useStateStore();
-
-const { getProgress, log, getIsLoading } = storeToRefs(state);
-
-onMounted(() => {
-
-  state.setCanvas(canvas.value);
-  state.setEngine();
-  state.loadAssets();
-
-  document.getElementById('babylonjsLoadingDiv').style.display = 'none';
 })
 
 </script>
@@ -98,10 +85,11 @@ canvas {
 main {
   padding-block: 50px;
   padding-inline: 15px;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   z-index: 1;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  color: white;
 }
 
 .button {

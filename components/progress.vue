@@ -20,7 +20,7 @@ const { progress } = defineProps({
   border: solid 1px gray;
   min-height: 7px;
   position: fixed;
-  top: 0;
+  bottom: 0;
 }
 
 .progress__bar {

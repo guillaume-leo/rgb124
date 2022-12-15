@@ -4,6 +4,12 @@ declare global {
   const abortNavigation: typeof import('../../node_modules/nuxt/dist/app')['abortNavigation']
   const acceptHMRUpdate: typeof import('../../node_modules/@pinia/nuxt/dist/runtime/composables')['acceptHMRUpdate']
   const addRouteMiddleware: typeof import('../../node_modules/nuxt/dist/app')['addRouteMiddleware']
+  const babylonCamera: typeof import('../../babylon/camera')['babylonCamera']
+  const babylonInit: typeof import('../../babylon/base')['babylonInit']
+  const babylonLight: typeof import('../../babylon/light')['babylonLight']
+  const babylonLoadAssets: typeof import('../../babylon/base')['babylonLoadAssets']
+  const babylonLoadingScreen: typeof import('../../babylon/loadingScreen')['babylonLoadingScreen']
+  const babylonPbr: typeof import('../../babylon/pbr')['babylonPbr']
   const clearError: typeof import('../../node_modules/nuxt/dist/app')['clearError']
   const clearNuxtData: typeof import('../../node_modules/nuxt/dist/app')['clearNuxtData']
   const computed: typeof import('vue')['computed']
@@ -79,6 +85,7 @@ declare global {
   const useAppConfig: typeof import('../../node_modules/nuxt/dist/app')['useAppConfig']
   const useAsyncData: typeof import('../../node_modules/nuxt/dist/app')['useAsyncData']
   const useAttrs: typeof import('vue')['useAttrs']
+  const useBabylonStore: typeof import('../../stores/babylon')['useBabylonStore']
   const useCookie: typeof import('../../node_modules/nuxt/dist/app')['useCookie']
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
@@ -97,7 +104,6 @@ declare global {
   const useRuntimeConfig: typeof import('../../node_modules/nuxt/dist/app')['useRuntimeConfig']
   const useSlots: typeof import('vue')['useSlots']
   const useState: typeof import('../../node_modules/nuxt/dist/app')['useState']
-  const useStateStore: typeof import('../../stores/state')['useStateStore']
   const useTransitionState: typeof import('vue')['useTransitionState']
   const watch: typeof import('vue')['watch']
   const watchEffect: typeof import('vue')['watchEffect']
@@ -115,6 +121,12 @@ declare module 'vue' {
     readonly abortNavigation: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['abortNavigation']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('../../node_modules/@pinia/nuxt/dist/runtime/composables')['acceptHMRUpdate']>
     readonly addRouteMiddleware: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['addRouteMiddleware']>
+    readonly babylonCamera: UnwrapRef<typeof import('../../babylon/camera')['babylonCamera']>
+    readonly babylonInit: UnwrapRef<typeof import('../../babylon/base')['babylonInit']>
+    readonly babylonLight: UnwrapRef<typeof import('../../babylon/light')['babylonLight']>
+    readonly babylonLoadAssets: UnwrapRef<typeof import('../../babylon/base')['babylonLoadAssets']>
+    readonly babylonLoadingScreen: UnwrapRef<typeof import('../../babylon/loadingScreen')['babylonLoadingScreen']>
+    readonly babylonPbr: UnwrapRef<typeof import('../../babylon/pbr')['babylonPbr']>
     readonly clearError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['clearError']>
     readonly clearNuxtData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['clearNuxtData']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
@@ -190,6 +202,7 @@ declare module 'vue' {
     readonly useAppConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useAppConfig']>
     readonly useAsyncData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useAsyncData']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
+    readonly useBabylonStore: UnwrapRef<typeof import('../../stores/babylon')['useBabylonStore']>
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useCookie']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
@@ -208,7 +221,6 @@ declare module 'vue' {
     readonly useRuntimeConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRuntimeConfig']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useState: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useState']>
-    readonly useStateStore: UnwrapRef<typeof import('../../stores/state')['useStateStore']>
     readonly useTransitionState: UnwrapRef<typeof import('vue')['useTransitionState']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>

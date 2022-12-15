@@ -1,7 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    baseURL: '/rgb124/'
+    baseURL: '/rgb124/',
+    buildAssetsDir: '/assets/',
   },
   imports: {
     dirs: ['stores'],
@@ -16,3 +17,4 @@ export default defineNuxtConfig({
   ],
 
 })
+

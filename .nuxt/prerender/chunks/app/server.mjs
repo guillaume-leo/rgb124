@@ -1046,7 +1046,7 @@ const _routes = [
     meta: __nuxt_page_meta$4,
     alias: (__nuxt_page_meta$4 == null ? void 0 : __nuxt_page_meta$4.alias) || [],
     redirect: (__nuxt_page_meta$4 == null ? void 0 : __nuxt_page_meta$4.redirect) || void 0,
-    component: () => import('./assets/index.97bd9f12.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index.fa80e6ed.mjs').then((m) => m.default || m)
   },
   {
     name: (_c = __nuxt_page_meta$3 == null ? void 0 : __nuxt_page_meta$3.name) != null ? _c : "contact",
@@ -1056,7 +1056,7 @@ const _routes = [
     meta: __nuxt_page_meta$3,
     alias: (__nuxt_page_meta$3 == null ? void 0 : __nuxt_page_meta$3.alias) || [],
     redirect: (__nuxt_page_meta$3 == null ? void 0 : __nuxt_page_meta$3.redirect) || void 0,
-    component: () => import('./assets/index.cd4786e8.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index.5f729680.mjs').then((m) => m.default || m)
   },
   {
     name: (_e = __nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.name) != null ? _e : "directing",
@@ -1066,7 +1066,7 @@ const _routes = [
     meta: __nuxt_page_meta$2,
     alias: (__nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.alias) || [],
     redirect: (__nuxt_page_meta$2 == null ? void 0 : __nuxt_page_meta$2.redirect) || void 0,
-    component: () => import('./assets/index.c3e2fdb6.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index.b26e7995.mjs').then((m) => m.default || m)
   },
   {
     name: (_g = __nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.name) != null ? _g : "index",
@@ -1076,7 +1076,7 @@ const _routes = [
     meta: __nuxt_page_meta$1,
     alias: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.alias) || [],
     redirect: (__nuxt_page_meta$1 == null ? void 0 : __nuxt_page_meta$1.redirect) || void 0,
-    component: () => import('./assets/index.8be69f71.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index.0da5e9b2.mjs').then((m) => m.default || m)
   },
   {
     name: (_i = __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) != null ? _i : "portfolio",
@@ -1086,7 +1086,7 @@ const _routes = [
     meta: __nuxt_page_meta,
     alias: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.alias) || [],
     redirect: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect) || void 0,
-    component: () => import('./assets/index.b8317f5c.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index.83aeecff.mjs').then((m) => m.default || m)
   }
 ];
 const routerOptions0 = {
@@ -1306,7 +1306,7 @@ const _wrapIf = (component, props, slots) => {
   return { default: () => props ? h(component, props === true ? {} : props, slots) : h(Fragment, {}, slots) };
 };
 const layouts = {
-  default: () => import('./assets/default.65d5a738.mjs').then((m) => m.default || m)
+  default: () => import('./_nuxt/default.6118fdc9.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   props: {
@@ -1483,7 +1483,7 @@ const _sfc_main = {
   __name: "nuxt-root",
   __ssrInlineRender: true,
   setup(__props) {
-    const ErrorComponent = defineAsyncComponent(() => import('./assets/error-component.385eea5f.mjs').then((r) => r.default || r));
+    const ErrorComponent = defineAsyncComponent(() => import('./_nuxt/error-component.bf4ad3af.mjs').then((r) => r.default || r));
     const nuxtApp = useNuxtApp();
     nuxtApp.deferHydration();
     provide("_route", useRoute());

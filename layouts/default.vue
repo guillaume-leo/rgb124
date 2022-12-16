@@ -1,11 +1,10 @@
 <template>
+  <div ref="rgbLayer" class="rgb-layer"></div>
   <button @click="handleNavVisibility" class="button button--nav">
     <img v-if="!isNavOpen" class="button__icon button__icon--nav" src="~/assets/bar-icon.png" alt="open menu icon">
     <img v-else class="button__icon button__icon--nav" src="~/assets/return-icon.png" alt="close menu icon">
   </button>
-  <Transition name="translateX">
-    <NavPhone v-show="isNavOpen" />
-  </Transition>
+  <NavPhone v-show="isNavOpen" />
   <slot />
   <Shape />
   <Transition>
@@ -23,6 +22,7 @@ const babylonState = useBabylonStore();
 const { isLoading, progress, logs } = storeToRefs(babylonState);
 
 const isNavOpen = ref(false)
+const rgbLayer = ref(null)
 
 const route = useRoute();
 const currentPage = ref(route.path);
@@ -34,6 +34,22 @@ const handleNavVisibility = () => {
 watch(route, (r) => {
   isNavOpen.value = false;
   currentPage.value = r.path;
+})
+
+watch(isNavOpen, () => {
+  rgbLayer.value.style.display = 'block'
+  const colors = ['green', 'blue', 'red']
+  let repetitions = 3
+  const interval = setInterval(() => {
+    if (repetitions > 0) {
+      rgbLayer.value.style.backgroundColor = colors[repetitions]
+      repetitions--;
+    } else {
+      clearInterval(interval);
+      rgbLayer.value.style.display = 'none'
+    }
+  }, 45)
+
 })
 
 </script>
@@ -120,5 +136,14 @@ main {
 .button__icon--nav {
   filter: invert(1.0);
   max-width: 25px;
+}
+
+.rgb-layer {
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  position: absolute;
+  display: none;
+  opacity: 0.95;
 }
 </style>

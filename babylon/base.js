@@ -48,25 +48,25 @@ export const babylonLoadAssets = (scene, engine, pbr) => {
    *    adding emmissive textures
    *------------------------**/
 
-  let texEmissiveTasks = [];
-  const emissiveTextures = {};
-  for (let i = 0; i < 76; i++) {
-    const emissiveTexUrl = `${
-      babylonStore.baseURL
-    }textures/emissive/Emission_v2_000${i.toString().padStart(2, '0')}.jpg`;
+  // let texEmissiveTasks = [];
+  // const emissiveTextures = {};
+  // for (let i = 0; i < 76; i++) {
+  //   const emissiveTexUrl = `${
+  //     babylonStore.baseURL
+  //   }textures/emissive/Emission_v2_000${i.toString().padStart(2, '0')}.jpg`;
 
-    texEmissiveTasks[i] = assetsManager.addTextureTask(
-      'eTex_' + i,
-      emissiveTexUrl
-    );
-  }
+  //   texEmissiveTasks[i] = assetsManager.addTextureTask(
+  //     'eTex_' + i,
+  //     emissiveTexUrl
+  //   );
+  // }
 
-  texEmissiveTasks.forEach((texEmissiveTask) => {
-    texEmissiveTask.onSuccess = (task) => {
-      babylonStore.addLog(task.name);
-      emissiveTextures[task.name] = task.texture;
-    };
-  });
+  // texEmissiveTasks.forEach((texEmissiveTask) => {
+  //   texEmissiveTask.onSuccess = (task) => {
+  //     babylonStore.addLog(task.name);
+  //     emissiveTextures[task.name] = task.texture;
+  //   };
+  // });
 
   /**----------------------
    *    adding roughness tex
@@ -121,9 +121,14 @@ export const babylonLoadAssets = (scene, engine, pbr) => {
    *------------------------**/
 
   assetsManager.onFinish = () => {
-    const material = babylonPbr(scene, metalTex, envTex, emissiveTextures);
+    const material = babylonPbr(scene, metalTex, envTex);
     shape.material = material;
     babylonStore.setIsLoading(false);
+
+    scene.debugLayer.show({
+      embedMode: true,
+    });
+
     engine.runRenderLoop(() => {
       scene.clearColor = new BABYLON.Color3(0, 0, 0);
       scene.render();

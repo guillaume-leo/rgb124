@@ -16,5 +16,8 @@ export const babylonCamera = (canvas, scene) => {
   camera.lowerRadiusLimit = 8;
   camera.upperRadiusLimit = 8;
 
+  camera.upperBetaLimit = null;
+  camera.lowerBetaLimit = null;
+
   return camera;
 };

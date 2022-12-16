@@ -14,7 +14,7 @@
   "node_modules/nuxt/dist/app/entry.mjs": {
     "resourceType": "script",
     "module": true,
-    "file": "entry.e9233420.js",
+    "file": "entry.992958ba.js",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -25,7 +25,7 @@
   "virtual:nuxt:/Users/guillaumequet/code/perso/projects-2022/rgb124/.nuxt/error-component.mjs": {
     "resourceType": "script",
     "module": true,
-    "file": "error-component.2ba1189a.js",
+    "file": "error-component.9a93fe58.js",
     "src": "virtual:nuxt:/Users/guillaumequet/code/perso/projects-2022/rgb124/.nuxt/error-component.mjs",
     "isDynamicEntry": true,
     "imports": [
@@ -39,7 +39,7 @@
   "pages/3d/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.ac1d78bf.js",
+    "file": "index.11cbc300.js",
     "src": "pages/3d/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -49,7 +49,7 @@
   "pages/contact/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.a870b0ef.js",
+    "file": "index.ef212fe1.js",
     "src": "pages/contact/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -59,7 +59,7 @@
   "pages/directing/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.f2541564.js",
+    "file": "index.21843e30.js",
     "src": "pages/directing/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -69,7 +69,7 @@
   "pages/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.67135ff2.js",
+    "file": "index.32d22b15.js",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -79,7 +79,7 @@
   "pages/portfolio/index.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "index.762a5613.js",
+    "file": "index.a87a5779.js",
     "src": "pages/portfolio/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -89,7 +89,7 @@
   "layouts/default.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "default.3250fe8f.js",
+    "file": "default.64ba32e7.js",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -118,12 +118,12 @@
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "error-404.f6339e9b.js",
+    "file": "error-404.b65823ac.js",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
-      "_composables.50e1680e.js"
+      "_composables.35791ed5.js"
     ],
     "css": []
   },
@@ -131,10 +131,10 @@
     "file": "error-404.23f2309d.css",
     "resourceType": "style"
   },
-  "_composables.50e1680e.js": {
+  "_composables.35791ed5.js": {
     "resourceType": "script",
     "module": true,
-    "file": "composables.50e1680e.js",
+    "file": "composables.35791ed5.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
@@ -142,11 +142,11 @@
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "error-500.e1a75bae.js",
+    "file": "error-500.bf3d0540.js",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_composables.50e1680e.js",
+      "_composables.35791ed5.js",
       "node_modules/nuxt/dist/app/entry.mjs"
     ],
     "css": []
@@ -160,14 +160,14 @@
     "file": "error-500.aa16ed4d.css",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.css"
   },
-  "node_modules/@nuxt/ui-templates/dist/templates/error-404.css": {
-    "resourceType": "style",
-    "file": "error-404.23f2309d.css",
-    "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.css"
-  },
   "layouts/default.css": {
     "resourceType": "style",
     "file": "default.222043f0.css",
     "src": "layouts/default.css"
+  },
+  "node_modules/@nuxt/ui-templates/dist/templates/error-404.css": {
+    "resourceType": "style",
+    "file": "error-404.23f2309d.css",
+    "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.css"
   }
 }

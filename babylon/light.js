@@ -1,5 +1,4 @@
 export const babylonLight = (scene) => {
-  let posX = 1;
   const light = new BABYLON.HemisphericLight(
     'light',
     new BABYLON.Vector3(1, 1, 2),
@@ -8,17 +7,22 @@ export const babylonLight = (scene) => {
 
   light.intensity = 1.0;
 
-  const colors = [
-    new BABYLON.Color3(1, 0, 0),
-    new BABYLON.Color3(0, 1, 0),
-    new BABYLON.Color3(0, 0, 1),
-  ];
+  light.diffuse = new BABYLON.Color3(1, 1, 1);
 
-  scene.beforeRender = () => {
-    const rand = Math.random() * 3;
-    const rand2 = Math.random();
-    if (rand2 < 0.2) light.diffuse = colors[parseInt(rand)];
+  const light2 = new BABYLON.HemisphericLight(
+    'light2',
+    new BABYLON.Vector3(2, 1, 1),
+    scene
+  );
+
+  light2.intensity = 1.0;
+
+  light2.diffuse = new BABYLON.Color3(1, 1, 1);
+
+  scene.beforeRender = () => {};
+
+  return {
+    light,
+    light2,
   };
-
-  return light;
 };

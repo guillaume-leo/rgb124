@@ -55,10 +55,15 @@ const currentRoute = ref(route.path)
 watch(route, (r) => {
   currentRoute.value = r.path
   if (glitchLetters.value[0].parentNode.classList.contains('router-link-active')) {
+    letter.style.color = `red`;
+
     isActive.value = true;
     glitchSometimes()
   } else {
+    glitchSometimes()
     isActive.value = false;
+    letter.style.color = `white`;
+
   }
 })
 
@@ -82,7 +87,7 @@ a {
 }
 
 span {
-  color: red;
+  color: white;
   letter-spacing: 5px;
 }
 </style>

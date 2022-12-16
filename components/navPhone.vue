@@ -1,19 +1,12 @@
 <template>
   <nav class="nav">
     <NuxtLink class="link  link--home nav__link" to="/">RGB <br> 124</NuxtLink>
-    <GlitchLink class="link link--directing nav__link" word="Directing & production" url="/directing"></GlitchLink>
+    <NuxtLink class="link link--directing nav__link" to="/directing">Directing & production</NuxtLink>
     <NuxtLink class="link link--3d nav__link" to="/3d">3d/vfx</NuxtLink>
     <NuxtLink class="link link--contact nav__link" to="/contact">contact</NuxtLink>
     <NuxtLink class="link link--portfolio nav__link" to="/portfolio">portfolio</NuxtLink>
   </nav>
 </template>
-
-<script setup>
-
-
-
-
-</script>
 
 <style for="scss">
 .nav {
@@ -41,8 +34,6 @@
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  flex-grow: 0;
-  max-height: 30px;
 }
 
 .nav__close-button {

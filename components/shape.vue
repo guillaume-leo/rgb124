@@ -16,10 +16,6 @@ onMounted(() => {
 
   const light = babylonLight(scene)
 
-  scene.registerBeforeRender(() => {
-    light.position = camera.position;
-  });
-
   babylonLoadAssets(scene, engine);
 
   window.addEventListener('resize', () => {

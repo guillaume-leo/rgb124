@@ -125,9 +125,9 @@ export const babylonLoadAssets = (scene, engine, pbr) => {
     shape.material = material;
     babylonStore.setIsLoading(false);
 
-    scene.debugLayer.show({
-      embedMode: true,
-    });
+    // scene.debugLayer.show({
+    //   embedMode: true,
+    // });
 
     engine.runRenderLoop(() => {
       scene.clearColor = new BABYLON.Color3(0, 0, 0);

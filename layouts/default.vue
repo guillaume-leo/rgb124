@@ -5,7 +5,7 @@
     <img v-else class="button__icon button__icon--nav" src="~/assets/return-icon.png" alt="close menu icon">
   </button>
   <NavPhone v-show="isNavOpen" />
-  <slot />
+
   <Shape />
   <Transition>
     <Log v-show="isLoading" :logs="logs.slice().reverse()" />
@@ -13,6 +13,7 @@
   <Transition>
     <Progress v-show="isLoading" :progress=progress />
   </Transition>
+  <slot />
 </template>
 
 <script setup>
@@ -55,8 +56,26 @@ watch(isNavOpen, () => {
 </script>
 
 <style>
+html,
+body {
+  min-height: 100vh;
+}
+
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Kanit;
+}
+
+#__nuxt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+iframe {
+  width: 100%;
 }
 
 span {
@@ -89,13 +108,9 @@ span {
 }
 
 canvas {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   width: 100%;
-  height: 100%;
+  min-height: 80vh;
+  outline: none;
 }
 
 main {
@@ -125,6 +140,7 @@ main {
   background-color: black;
   position: fixed;
   right: 0;
+  top: 0;
 }
 
 .button__icon {
@@ -142,7 +158,8 @@ main {
   width: 100vw;
   height: 100vh;
   z-index: 4;
-  position: absolute;
+  position: fixed;
+  top: 0;
   display: none;
   opacity: 0.95;
 }

@@ -7,7 +7,7 @@ export const babylonPbr = (scene, metalTex, envTex) => {
   // pbr.metallic = 1.0; // set to 1 to only use it from the metallicRoughnessTexture
   // pbr.roughness = 0.0; // set to 1 to only use it from the metallicRoughnessTexture
   pbr.metallicRoughnessTexture = metalTex;
-  scene.createDefaultSkybox(envTex, true, undefined, -0.9, true);
+  scene.createDefaultSkybox(envTex, true, undefined, 1.0, true);
 
   pbr.albedoColor = new BABYLON.Color3(0.1, 0.1, 0.1);
   pbr.metallic = 1.0;

@@ -124,7 +124,6 @@ export const babylonLoadAssets = (scene, engine, pbr) => {
     const material = babylonPbr(scene, metalTex, envTex);
     shape.material = material;
     babylonStore.setIsLoading(false);
-
     // scene.debugLayer.show({
     //   embedMode: true,
     // });

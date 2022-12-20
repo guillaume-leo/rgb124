@@ -10,7 +10,7 @@ export const babylonCamera = (canvas, scene) => {
     scene
   );
 
-  camera.attachControl(canvas, false);
+  camera.attachControl(canvas, true);
   camera.useAutoRotationBehavior = true;
 
   camera.lowerRadiusLimit = 8;

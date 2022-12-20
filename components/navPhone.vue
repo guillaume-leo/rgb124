@@ -11,9 +11,9 @@
 <style for="scss">
 .nav {
   background-color: rgba(0, 0, 0, 0.8);
-  /* mix-blend-mode: difference; */
   backdrop-filter: blur(10px);
   display: flex;
+  top: 0;
   flex-direction: column;
   justify-content: center;
   width: 100%;
@@ -22,6 +22,7 @@
   gap: 20px;
   z-index: 2;
   overflow: hidden;
+  font-family: Kanit;
 }
 
 .link {

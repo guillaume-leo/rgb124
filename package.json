@@ -17,6 +17,9 @@
     "@babylonjs/core": "^5.37.0",
     "@babylonjs/loaders": "^5.37.0",
     "@pinia/nuxt": "^0.4.6",
+    "@vimeo/player": "^2.18.0",
+    "@vueuse/components": "^9.8.2",
+    "@vueuse/core": "^9.8.2",
     "babylonjs": "^5.37.0",
     "babylonjs-loaders": "^5.37.0",
     "pinia": "^2.0.28"

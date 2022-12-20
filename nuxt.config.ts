@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     dirs: ['stores', 'babylon'],
   },
   modules: [
+    '@nuxtjs/google-fonts',
     [
       '@pinia/nuxt',
       {
@@ -11,6 +12,15 @@ export default defineNuxtConfig({
       },
     ],
   ],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@/assets/css/main.scss";'
+        }
+      }
+    }
+  }
 
 })
 

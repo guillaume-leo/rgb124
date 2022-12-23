@@ -4,7 +4,6 @@ export default defineNuxtConfig({
     dirs: ['stores', 'babylon'],
   },
   modules: [
-    '@nuxtjs/google-fonts',
     [
       '@pinia/nuxt',
       {

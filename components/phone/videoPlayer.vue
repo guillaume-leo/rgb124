@@ -2,7 +2,7 @@
 
   <div :id="props.url" class="v-player" v-intersection-observer="onIntersectionObserver">
     <div class="title">
-      <p>video title link</p>
+      <p>{{ props.linkText }}</p>
     </div>
   </div>
 </template>
@@ -13,7 +13,8 @@ import { vIntersectionObserver } from '@vueuse/components'
 import Player from '@vimeo/player';
 
 const props = defineProps({
-  url: Number
+  url: Number,
+  linkText: String,
 })
 
 let video = null;

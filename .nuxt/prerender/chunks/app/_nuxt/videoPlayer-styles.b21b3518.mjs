@@ -1,6 +1,0 @@
-const videoPlayer_vue_vue_type_style_index_0_scoped_fefb996c_lang = ".v-player[data-v-fefb996c]{position:relative}.title[data-v-fefb996c]{display:flex;min-height:100%;min-width:100%;position:absolute}p[data-v-fefb996c]{color:#fff;font-size:30px;font-variant:small-caps;font-weight:800;letter-spacing:4px;margin:auto;mix-blend-mode:exclusion;z-index:2}";
-
-const videoPlayerStyles_b21b3518 = [videoPlayer_vue_vue_type_style_index_0_scoped_fefb996c_lang];
-
-export { videoPlayerStyles_b21b3518 as default };
-//# sourceMappingURL=videoPlayer-styles.b21b3518.mjs.map

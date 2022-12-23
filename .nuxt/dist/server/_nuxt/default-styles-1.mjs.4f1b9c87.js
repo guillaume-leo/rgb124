@@ -1,0 +1,5 @@
+const default_vue_vue_type_style_index_0_lang = "body,html{min-height:100vh}body{font-family:Kanit;margin:0}#__nuxt,body{display:flex;flex-direction:column}#__nuxt{justify-content:center}iframe{width:100%}span{font-family:Courier New,Courier,monospace}.v-enter-active,.v-leave-active{transition:opacity 2s ease}.v-enter-from,.v-leave-to{opacity:0}.translateX-enter-active,.translateX-leave-active{transition:all .125s ease-in-out}.translateX-enter-from,.translateX-leave-to{opacity:0;transform:translateX(-100%)}#babylonjsLoadingDiv{display:none}canvas{min-height:80vh;outline:none;width:100%}.button{background:transparent;border:none;cursor:pointer;display:inline-block;margin:0;max-height:50px;padding:10px 20px;text-align:center}.button--nav{background-color:#000;position:fixed;right:0;top:0;z-index:3}.button__icon{max-height:inherit;max-width:100%}.button__icon--nav{filter:invert(1);max-width:25px}.rgb-layer{display:none;height:100vh;opacity:.95;position:fixed;top:0;width:100vw;z-index:4}";
+export {
+  default_vue_vue_type_style_index_0_lang as default
+};
+//# sourceMappingURL=default-styles-1.mjs.4f1b9c87.js.map

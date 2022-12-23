@@ -1,15 +1,17 @@
 <template>
 
   <div class="videos">
-    <PhoneVideoPlayer v-for="url in urls" :key="url" class="videos__video" :url="url" />
+    <PhoneVideoPlayer v-for="video in homeVideos" :key="video.id" class="videos__video" :url="video.id"
+      :link-text="video.linkText" />
   </div>
 
 </template>
 
 <script setup>
 
+const videosState = useVideoStore();
+const { videos, homeVideos } = storeToRefs(videosState)
 
-const urls = ref([782874637, 595204743, 770835251, 510149559, 640436924, 32001208, 122375452])
 
 </script>
 

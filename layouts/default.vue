@@ -6,7 +6,7 @@
   </button>
   <NavPhone v-show="isNavOpen" />
 
-  <Shape />
+  <Shape v-show="currentPage === '/'" />
   <Transition>
     <Log v-show="isLoading" :logs="logs.slice().reverse()" />
   </Transition>
@@ -18,9 +18,14 @@
 
 <script setup>
 
+/**----------------------
+ *    load stores
+ *------------------------**/
 const babylonState = useBabylonStore();
-
 const { isLoading, progress, logs } = storeToRefs(babylonState);
+
+const videosState = useVideoStore();
+videosState.callVideos();
 
 const isNavOpen = ref(false)
 const rgbLayer = ref(null)
@@ -111,16 +116,6 @@ canvas {
   width: 100%;
   min-height: 80vh;
   outline: none;
-}
-
-main {
-  padding-block: 50px;
-  padding-inline: 15px;
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  z-index: 1;
-  backdrop-filter: blur(5px);
-  color: white;
 }
 
 .button {

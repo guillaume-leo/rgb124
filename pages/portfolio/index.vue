@@ -1,46 +1,36 @@
 <template>
   <main>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eveniet, libero et ab dicta omnis dolorem.
-      Quisquam fuga culpa modi commodi in voluptatibus assumenda, alias aliquid consequatur ea facere blanditiis!</p>
-    <br>
+    <section class="project" :id="'project_' + VIDEO_ID" v-for="{ VIDEO_ID, TITLE, DESCRIPTION } in videos">
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eveniet, libero et ab dicta omnis dolorem.
-      Quisquam fuga culpa modi commodi in voluptatibus assumenda, alias aliquid consequatur ea facere blanditiis!</p>
-    <br>
+      <h1 class="project__title"> {{ TITLE }} </h1>
+      <p class="project__description"> {{ DESCRIPTION }} </p>
+      <iframe :src="'https://player.vimeo.com/video/' + VIDEO_ID + '?h=dc400081cd&title=0&byline=0&portrait=0'"
+        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eveniet, libero et ab dicta omnis dolorem.
-      Quisquam fuga culpa modi commodi in voluptatibus assumenda, alias aliquid consequatur ea facere blanditiis!</p>
-    <br>
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eveniet, libero et ab dicta omnis dolorem.
-      Quisquam fuga culpa modi commodi in voluptatibus assumenda, alias aliquid consequatur ea facere blanditiis!</p>
-    <br>
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eveniet, libero et ab dicta omnis dolorem.
-      Quisquam fuga culpa modi commodi in voluptatibus assumenda, alias aliquid consequatur ea facere blanditiis! Lorem
-      ipsum dolor sit amet consectetur adipisicing elit. Doloribus, debitis quibusdam! Alias corporis enim, aspernatur
-      praesentium illo sequi, qui eos fugiat quis aliquam iste pariatur laudantium cum. Non, illo exercitationem.</p>
-    <br>
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eveniet, libero et ab dicta omnis dolorem.
-      Quisquam fuga culpa modi commodi in voluptatibus assumenda, alias aliquid consequatur ea facere blanditiis!</p>
-    <br>
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eveniet, libero et ab dicta omnis dolorem.
-      Quisquam fuga culpa modi commodi in voluptatibus assumenda, alias aliquid consequatur ea facere blanditiis! Lorem
-      ipsum dolor sit, amet consectetur adipisicing elit. In earum ab aliquid consectetur, sed architecto laboriosam est
-      magni dolorum molestiae id veritatis omnis assumenda illo quam quisquam provident tenetur. Accusantium.</p>
-    <br>
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eveniet, libero et ab dicta omnis dolorem.
-      Quisquam fuga culpa modi commodi in voluptatibus assumenda, alias aliquid consequatur ea facere blanditiis! Lorem
-      ipsum dolor sit amet consectetur adipisicing elit. Numquam harum doloremque unde dolore totam sed, recusandae
-      rerum?
-      Architecto quod officia, doloribus facilis omnis ut similique illum sequi, sint nostrum dolorum?</p>
-    <br>
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eveniet, libero et ab dicta omnis dolorem.
-      Quisquam fuga culpa modi commodi in voluptatibus assumenda, alias aliquid consequatur ea facere blanditiis!</p>
-    <br>
+    </section>
   </main>
 </template>
+
+<script setup>
+
+const videosState = useVideoStore();
+const { videos } = storeToRefs(videosState)
+
+</script>
+
+<style scoped>
+main {
+  padding-block: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+p {
+  padding-inline: 15px;
+}
+
+iframe {
+  min-width: 100%;
+}
+</style>
